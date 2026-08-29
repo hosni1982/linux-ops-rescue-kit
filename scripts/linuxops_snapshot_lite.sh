@@ -3,6 +3,9 @@
 # ============================================================
 # Linux Ops Rescue Kit - Snapshot Lite
 # Version: 1.0
+# License: MIT
+# Copyright (c) 2026 Linux Ops Lab
+# See: ../LICENSE.md
 #
 # Free read-only diagnostic helper for Linux on-call engineers.
 #
