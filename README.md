@@ -72,27 +72,37 @@ If the SAN LUN is missing, recreating the PV or VG can turn a recoverable storag
 
 ## Free Resources
 
-This repository will include practical resources such as:
+### Diagnostic Tools
 
-### Diagnostic tools
+- [`linuxops_snapshot_lite.sh`](scripts/linuxops_snapshot_lite.sh)  
+  Read-only Linux snapshot tool that collects system identity, kernel, load, failed services, boot errors, filesystem usage, inodes, block devices, memory, network configuration, routing and listening ports.
 
-- Linux system snapshot
-- Basic storage checks
-- Network path diagnostics
-- Performance triage examples
+### Incident Samples
 
-### Incident samples
+- [`High Load but Low CPU Usage`](incidents/high-load-low-cpu.md)  
+  Learn why a high Linux load average does not always mean CPU saturation and how blocked I/O, storage latency and Multipath issues can be the real cause.
 
-- High load but low CPU usage
-- Emergency mode troubleshooting
-- Missing filesystem / LVM / Multipath investigation
+### Troubleshooting Method
 
-### Troubleshooting methods
+The resources in this repository follow the same principle:
 
-- First 10-minute incident workflow
-- Evidence collection
-- Failure-layer analysis
-- Stop & escalate decisions
+```text
+Symptom
+   ↓
+Evidence
+   ↓
+Failure Layer
+   ↓
+Root Cause
+   ↓
+Safest Recovery
+   ↓
+Verification
+```
+
+The objective is to prove where the failure is before applying a fix.
+
+More free incident samples and diagnostic tools will be added over time.
 
 ---
 
