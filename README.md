@@ -82,6 +82,9 @@ If the SAN LUN is missing, recreating the PV or VG can turn a recoverable storag
 - [`High Load but Low CPU Usage`](incidents/high-load-low-cpu.md)  
   Learn why a high Linux load average does not always mean CPU saturation and how blocked I/O, storage latency and Multipath issues can be the real cause.
 
+- [`/data Disappeared After Reboot — LVM & Multipath Troubleshooting`](incidents/data-disappeared-lvm-multipath.md)  
+  Follow the dependency chain from filesystem to LV, VG, PV, Multipath and SAN before touching destructive LVM commands.
+
 ### Troubleshooting Method
 
 The resources in this repository follow the same principle:
